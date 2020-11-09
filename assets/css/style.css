@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 100px;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+h2 {
+  color: #06623b
+}
+
+h3 {
+  color: #06623b
+}
+
+.judul-logo {
+  font-family: 'Sansita Swashed', sans-serif;
+  font-weight: 600;
+}
+
+footer {
+  padding: 10px 20px;
+  color: white;
+  background-color: #06623b;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #f6d743;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #06623b;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul {
+  margin: 5px;
+  padding: 10px;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.kiri-data {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+header {
+  display: inline;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card>h2 {
+  margin-top: 40px;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/bg.jpg");
+  font-size: 20px;
+  padding: 250px 60px;
+  background-color: #06623b;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1100px) {
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav,
+  footer {
+    font-size: 14px;
+  }
+
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a.iconbar {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .iconbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  .navbar-toggle {
+    display: inline;
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+  .kiri-data {
+    display: inline;
+    position: absolute;
+    top: -40px;
+    left: 0;
+  }
+
+  .navbar-toggle i {
+    color: white;
+    font-size: 24px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .menu-logo {
+    font-size: 25px;
+    padding: 0;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    /* Properti lainnya */
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+}
+
+
+.center {
+  text-align: center;
+}
+
+.featured-image-logo {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.box {
+  flex-grow: 1;
+
+  background-color: #06623b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.count_number {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.count_text {
+  color: white;
+  padding-top: -30px !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .column {
+    flex: 33%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.button {
+  background-color: #06623b;
+  border: none;
+  color: white;
+  width: 280px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #088a54;
+}
+
+#btn-scroll {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f6d743;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}

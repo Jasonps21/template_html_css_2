@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beauty Plant</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="jumbotron">
+            <h1 class="judul-logo">Beauty Plant</h1>
+            <p>Hiasilah ruangan anda dengan keindahan alam dari tanaman hias yang kami tanam dan rasakan kesejukan alami
+                alam.</p>
+        </div>
+        <nav>
+            <div class="navbar responsive" id="navbaricon">
+                <ul class="menu-list">
+                    <li><a href="#daftar_tanaman" onclick="tutupMenu()">Tanaman</a></li>
+                    <li><a href="#cara_pesan" onclick="tutupMenu()">Cara Pesan</a></li>
+                </ul>
+
+                <div class="kiri-data">
+                    <p class="menu-logo judul-logo">Beauty Plant</p>
+                </div>
+
+                <div class="navbar-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <button onclick="topFunction()" id="btn-scroll" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+        <div id="content">
+            <article id="jumlah_data" class="card">
+                <h2 class="center" style="margin-bottom: -10px;">Jumlah Data Kami</h2>
+                <div class="container">
+                    <div class="box center">
+                        <h2 class="count_number counter" id="plant">1000</h2>
+                        <p class="count_text"><strong>Tanaman</strong></p>
+                    </div>
+                    <div class="box center">
+                        <h2 class="count_number counter" id="customer">300</h2>
+                        <p class="count_text"><strong>Pelanggan</strong></p>
+                    </div>
+                    <div class="box center">
+                        <h2 class="count_number counter" id="order">660</h2>
+                        <p class="count_text"><strong>Pesanan</strong></p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="daftar_tanaman" class="card">
+                <h2 class="center">Produk Tanaman</h2>
+                <div class="row" id="tanaman_hias">
+                </div>
+            </article>
+
+            <article id="cara_pesan" class="card">
+                <h2 class="center">Cara Memesan</h2>
+                <img src="assets/image/nature.jpg" class="featured-image" alt="geografis">
+                <p>Situs ini adalah sebuah sarana informasi internet yang kini lebih dikenal dengan sebutan
+                    website. sebuah usaha kecil dibidang pertamanan dan tanaman hias. Usaha ini telah mendapatkan
+                    support dan dukungan dari aspek-aspek penting yang berkaitan dalam dunia garden. Semua
+                    pengelolaannya dimotori dan diatur oleh anak-anak petani tanaman hias, yang memiliki visi
+                    dan misi untuk mengembangkan potensi daerah</p>
+                <p>Situs ini menggunakan sistem pemesanan melalui whatsapp, sehingga pemesanan wajib
+                    dilakukan melalui situs ini secara langsung. Anda tetap bisa bertanya hal-hal yang belum jelas ke
+                    layanan pelanggan kami kami melalui Whatsapp /
+                    SMS / Callcenter.
+                </p>
+                <p>
+                    Tata cara memesan di website Bibit Bunga: <br>
+                    1. Silahkan Hubungi nomor ini <a href="tel:+628234454123">08234454123</a> (WA) <br>
+                    2. Kirimkan foto tanaman yang ingin anda pesan <br>
+                    3. Silahkan transfer ke Rek BCA an <strong>UjiCobaAja 3412312312</strong> <br>
+                    4. Kirimkan Alamat tempat tinggal anda untuk kami antarkan tanamannya <br>
+                </p>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Profile Saya</h2>
+                    <figure>
+                        <img src="assets/image/logo.jpeg" class="featured-image-logo">
+                    </figure>
+                </header>
+                <section class="center">
+                    <p>Nama Lengkap : <strong>Lisa Blackpink</strong></p>
+                    <p>Email : <strong>lisa@blackpink.ac.id</strong></p>
+                    <p>Nomor HP : <strong>08912312312xxxx</strong></p>
+                    <p>Alamat Rumah: <strong>Makassar</strong></p>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p>Website ini dibuat dari kisah tanaman &#169; 2020, Beauty Plant</p>
+    </footer>
+    <script src="assets/js/main.js"></script>    
+</body>
+
+</html>
